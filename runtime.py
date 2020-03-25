@@ -8,3 +8,4 @@ file_name = "mess.txt"
 print(second_task(str_q))
 print(second_task("map"))
 print(third_task(file_name))
+
