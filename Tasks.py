@@ -22,18 +22,18 @@ def second_task(code_text: str):
 
 
 def third_task(file_name: str):
-    dict_simv = {}
+    dict_sim = {}
 
     with open(file_name) as f:
         for n in f.readlines():
             for simv in n:
-                if simv in dict_simv:
-                    dict_simv[simv] += 1
+                if simv in dict_sim:
+                    dict_sim[simv] += 1
                 else:
-                    dict_simv[simv] = 1
+                    dict_sim[simv] = 1
 
-    return dict_simv
+    return dict_sim
 
 
 if __name__ == '__main__':
-    print("Привет мир!")
+    print("Это библиотека, а не исполняемый файл.")
