@@ -35,5 +35,22 @@ def third_task(file_name: str):
     return dict_sim
 
 
+def pig_it(text: str):
+    result_list = []
+    punctuation_list = ["!", ".", ",", "?", ":", ";"]
+    words_list = text.split()
+    for word in words_list:
+        if word in punctuation_list:
+            result_list.append(word)
+        else:
+            result_list.append(word[1:] + word[0] + 'ay')
+    result = ' '.join(result_list)
+    return result
+
+
+def create_phone_number(n: list):
+    return '({}{}{}) {}{}{}-{}{}{}{}'.format(*n)
+
+
 if __name__ == '__main__':
     print("Это библиотека, а не исполняемый файл.")

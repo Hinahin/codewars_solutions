@@ -7,11 +7,21 @@ new_test = "yJDOmaOpNpcVlXxPXJjSbxjekgfYKApqaVZFCIFUauFniYsjDEhJSprrskgcMXdrSpSX
            "OMExXgoWqprIowrrtXtRudBJbkfxYkSjvbjsayovTlYPZHVrjrkTgrZSPXxgOJJHgUIIDFPaUJAHBiGD" \
            "nKPIgoyXYZKwmLPBlrtGjDfIzEStNQigDBxnibYSKAMGaPGgcyOaONQYJGvloMBRsfQWKYbIVENbUMzg"
 
+test1 = "Pig latin is cool"
 
-file_name = "mess.txt"
+# file_name = "mess.txt"
 
-print(2**38)
-print(second_task(str_q))
-print(second_task("map"))
-print(third_task(file_name))
+# print(2**38)
+# print(second_task(str_q))
+# print(second_task("map"))
+# print(third_task(file_name))
 
+int_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
+
+
+
+
+# print(pig_it(test1))
