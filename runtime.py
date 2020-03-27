@@ -22,13 +22,6 @@ int_list = [[1, 2, 3, 4],
             [13, 14, 15, 16]]
 
 
-def snail_best(array):
-    a = []
-    while array:
-        a.extend(list(array.pop(0)))
-        array = list(zip(*array))
-        array.reverse()
-    return a
+print('Hello')
 
 
-print(snail_best(int_list))
