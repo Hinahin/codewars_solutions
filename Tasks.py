@@ -52,5 +52,33 @@ def create_phone_number(n: list):
     return '({}{}{}) {}{}{}-{}{}{}{}'.format(*n)
 
 
+def snail(ar: list):
+    result = []
+    result.extend(ar[0])
+    ar.pop(0)
+    if len(ar) > 0:
+        for x in range(0, len(ar)):
+            result.append(ar[x][-1])
+            ar[x].pop(-1)
+        for x in range(len(ar[-1]) - 1, -1, -1):
+            result.append(ar[-1][x])
+        ar.pop(-1)
+        for x in range(len(ar) - 1, -1, -1):
+            result.append(ar[x][0])
+            ar[x].pop(0)
+        if ar:
+            result.extend(snail(ar))
+    return result
+
+
+def snail_best(array: list):
+    a = []
+    while array:
+        a.extend(list(array.pop(0)))
+        array = list(zip(*array))
+        array.reverse()
+    return a
+
+
 if __name__ == '__main__':
     print("Это библиотека, а не исполняемый файл.")

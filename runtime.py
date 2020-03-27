@@ -16,12 +16,19 @@ test1 = "Pig latin is cool"
 # print(second_task("map"))
 # print(third_task(file_name))
 
-int_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+int_list = [[1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12],
+            [13, 14, 15, 16]]
 
 
+def snail_best(array):
+    a = []
+    while array:
+        a.extend(list(array.pop(0)))
+        array = list(zip(*array))
+        array.reverse()
+    return a
 
 
-
-
-
-# print(pig_it(test1))
+print(snail_best(int_list))
