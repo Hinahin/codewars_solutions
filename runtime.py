@@ -22,9 +22,7 @@ int_list = [[1, 2, 3, 4],
             [13, 14, 15, 16]]
 
 
-# def one(operation=None): return operation(1) if operation else 1
-# def two(operation=None): return operation(2) if operation else 2
-# def plus(number: int): return lambda x: x + number
+
 
 
 
